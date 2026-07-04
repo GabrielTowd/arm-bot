@@ -43,14 +43,16 @@ void onReceive(const esp_now_recv_info *info, const uint8_t *data, int len) {
 }
 
 void setup() {
+
+  
   Serial.begin(115200);
+  WiFi.mode(WIFI_STA);
+  //Serial.println(WiFi.macAddress());
 
   // Attacher les servos
   servo1.attach(servoPin1);
   servo2.attach(servoPin2);
   servo3.attach(servoPin3);
-
-  WiFi.mode(WIFI_STA);
 
   if (esp_now_init() != ESP_OK) {
     Serial.println("Erreur ESP-NOW");

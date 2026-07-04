@@ -2,7 +2,7 @@
 #include <esp_now.h>
 
 // Adresse MAC du récepteur (à modifier)
-uint8_t receiverMAC[] = {0x24, 0x6F, 0x28, 0xAB, 0xCD, 0xEF};
+uint8_t receiverMAC[] = {0xE4, 0xB3, 0x23, 0xB6, 0xFC, 0xA8};
 
 // Pins des potentiomètres
 const int potPin1 = 0;
